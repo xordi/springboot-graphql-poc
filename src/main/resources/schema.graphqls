@@ -1,0 +1,13 @@
+type Person {
+    id: ID!
+    name: String!
+    phone: String
+}
+
+type Query {
+    all(count: Int, offset: Int): [Person]!
+}
+
+type Mutation {
+    addPerson(name: String!, phone: String) : Person!
+}
