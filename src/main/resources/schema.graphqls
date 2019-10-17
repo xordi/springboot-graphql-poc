@@ -1,13 +1,30 @@
 type Person {
     id: ID!
     name: String!
-    phone: String
+    phones: [Phone!]
+}
+
+type Phone {
+    type: PhoneType!
+    phone: String!
+}
+
+enum PhoneType {
+    MOBILE
+    HOUSE
+    WORK
+}
+
+input PhoneInput {
+    type: PhoneType!
+    phone: String!
 }
 
 type Query {
-    all(count: Int, offset: Int): [Person]!
+    people(limit: Int = 0, offset: Int = 0): [Person]!
 }
 
 type Mutation {
-    addPerson(name: String!, phone: String) : Person!
+    addPerson(name: String!) : Person!
+    addPhoneToPerson(personId: ID!, phone: PhoneInput!) : Phone
 }
