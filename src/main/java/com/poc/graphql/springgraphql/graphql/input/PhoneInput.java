@@ -1,4 +1,4 @@
-package com.poc.graphql.springgraphql.graphql;
+package com.poc.graphql.springgraphql.graphql.input;
 
 import com.poc.graphql.springgraphql.entity.PhoneType;
 import lombok.Data;

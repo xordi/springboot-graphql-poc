@@ -1,4 +1,4 @@
-package com.poc.graphql.springgraphql.graphql;
+package com.poc.graphql.springgraphql.graphql.resolver;
 
 import com.coxautodev.graphql.tools.GraphQLResolver;
 import com.poc.graphql.springgraphql.entity.Person;

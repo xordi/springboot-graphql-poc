@@ -3,6 +3,7 @@ package com.poc.graphql.springgraphql.graphql;
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import com.poc.graphql.springgraphql.entity.Person;
 import com.poc.graphql.springgraphql.entity.Phone;
+import com.poc.graphql.springgraphql.graphql.input.PhoneInput;
 import com.poc.graphql.springgraphql.repository.PersonRepository;
 import com.poc.graphql.springgraphql.repository.PhoneRepository;
 import org.springframework.stereotype.Component;
