@@ -11,7 +11,7 @@ type Phone {
 
 enum PhoneType {
     MOBILE
-    HOUSE
+    HOME
     WORK
 }
 
