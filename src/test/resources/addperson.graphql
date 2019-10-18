@@ -1,0 +1,5 @@
+mutation AddPerson() {
+    addPerson(name: "Test") {
+        id
+    }
+}

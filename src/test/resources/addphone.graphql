@@ -1,0 +1,6 @@
+mutation AddPhoneToPerson($id: ID!, $phone: PhoneInput!) {
+    addPhoneToPerson(personId: $id, phone: $phone) {
+        type
+        phone
+    }
+}
