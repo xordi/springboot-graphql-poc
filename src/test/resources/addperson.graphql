@@ -1,4 +1,4 @@
-mutation AddPerson() {
+mutation AddPerson {
     addPerson(name: "Test") {
         id
     }
