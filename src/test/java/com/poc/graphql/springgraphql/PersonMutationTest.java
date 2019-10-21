@@ -24,7 +24,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 Those tests only test GraphQL related classes,
 that's why we are mocking the repositories, since
 every @Component, @Service or @Repository element is not loaded
-in the application context
+in the application context when using @GraphQLTest annotation
  */
 @RunWith(SpringRunner.class)
 @GraphQLTest
