@@ -28,7 +28,7 @@ in the application context when using @GraphQLTest annotation
  */
 @RunWith(SpringRunner.class)
 @GraphQLTest
-public class PersonMutationTest {
+public class PersonMutationTests {
 
   @Autowired
   private GraphQLTestTemplate graphQLTestTemplate;
