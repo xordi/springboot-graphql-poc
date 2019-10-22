@@ -1,17 +1,33 @@
+# The object representing a person
 type Person {
+    # The person identifier
     id: ID!
+
+    # The person name
     name: String!
+
+    # The list of phones of this person
     phones: [Phone!]
 }
 
+# The object representing a phone
 type Phone {
+    # The phone type
     type: PhoneType!
+
+    # The phone number
     phone: String!
 }
 
+# The phone type
 enum PhoneType {
+    # A mobile phone
     MOBILE
+
+    # A home phone
     HOME
+
+    # A work phone
     WORK
 }
 
@@ -21,14 +37,19 @@ input PhoneInput {
 }
 
 type Query {
+    # Gets the people loaded in the system
     people(limit: Int = 0, offset: Int = 0): [Person]!
 }
 
 type Mutation {
+    # Creates a new person in the system
     addPerson(name: String!) : Person!
+
+    # Adds a phone to a specific person
     addPhoneToPerson(personId: ID!, phone: PhoneInput!) : Phone
 }
 
 type Subscription {
+    # Subscribes to an event stream of created people
     createdPeople : Person!
 }
